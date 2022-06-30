@@ -1,0 +1,1360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero {
+    background-image: url(./images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 594px;
+}
+
+.login {
+    color: white;
+    display: flex;
+    margin-left: -5rem;
+    padding-top: 3rem;
+    gap: 87%;
+}
+
+.login img {
+    width: 12%;
+    height: 30px;
+    animation: myAnimate 3s ease-in forwards;
+}
+
+@keyframes myAnimate {
+    0% {
+        transform: translateX(-0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.login button {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    color: white;
+    font-size: 0.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    border-color: white;
+    border: solid 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    animation: animate 3s ease-in forwards;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.login button:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.close1 {
+    position: relative;
+    top: -26rem;
+    color: white;
+    font-size: 1.5rem;
+    left: 95%;
+    z-index: 150;
+    cursor: pointer;
+    display: block;
+}
+
+form {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-block: 8rem;
+    background-color: rgba(2, 2, 2, 0.902);
+}
+
+.my-form input {
+    width: 80%;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 3.3em;
+    font-family: italic;
+    border-bottom: 1px solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-inline: none;
+    border-top: none;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.my-form .email {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid white;
+}
+
+form .form-button {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5rem;
+}
+
+.form-button button {
+    font-size: 0.7rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    border: 2.5px solid white;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.form-button button:hover {
+    color: #201f1f;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-button button ion-icon {
+    font-size: 0.7rem;
+}
+
+.introductory {
+    position: relative;
+    color: white;
+    top: 100px;
+    margin-left: 16%;
+    margin-right: 10%;
+    border: none;
+    background-color: rgba(17, 17, 17, 0.575);
+    padding-block: 2.5rem;
+}
+
+.introductory h1 {
+    width: 90%;
+    font-size: 2.3rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+    animation: myAnimation 3s ease-in;
+}
+
+@keyframes myAnimation {
+    0% {
+        transform: translateY(-30%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.introductory p {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 3.9rem;
+    animation: anime 3s ease-in;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateY(30%);
+    }
+
+    100% {
+        transform: translateY(-0%);
+    }
+}
+
+.display {
+    position: relative;
+    top: 9rem;
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+ol {
+    display: block;
+    position: sticky;
+    top: 0;
+    margin-top: -3.5rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-block: 1.3rem;
+    padding-inline: 12rem;
+    font-size: 0.73rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 5;
+}
+
+ol li {
+    cursor: pointer;
+    color: rgb(97, 96, 96);
+}
+
+@media (max-width: 770px) {
+    .hero {
+        background-image: url(./images/hero-background.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 1030px;
+    }
+
+    @media screen and (min-width: 1000px), (max-width:1281px)  {
+        
+    }
+
+    .login {
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        gap: 87%;
+    }
+
+    .login img {
+        width: 10%;
+        height: 20px;
+    }
+
+    .login button{
+        padding-block: 0.2rem;
+        padding-inline: 0.7rem;
+        padding-top: 0.5rem;
+        font-size: 0.4rem;
+        border: solid 0.5px;
+        border-radius: 1px;
+        cursor: pointer;
+    }
+
+    .introductory {
+        position: relative;
+        top: 280px;
+        width: 70%;
+        border: none;
+        padding-block: 0.5rem;
+        margin-left: 7rem;
+    }
+
+    .introductory h1 {
+        width: 99%;
+        font-size: 2.6em;
+        line-height: 3rem;
+        margin-left: -0.6em;
+    }
+    
+    .introductory p {
+        font-size: 1.7em;
+        padding-left: 2.5rem;
+        width: 103%;
+        text-align: center;
+        margin-left: -1.1em;
+    }
+
+    .display {
+        display: block;
+        top: 33rem;
+        margin-left: 18.8rem;
+    }
+
+    .display img {
+        width: 10rem;
+    }
+
+    .nav-bar {
+        margin-left: 5rem;
+    }
+
+    ol {
+        position: relative;
+        transform: scaleX(0);
+        transition: 0.4s;
+        transform-origin: left;
+        margin-top: 2rem;
+        padding-inline: 0rem;
+        padding-block: 3rem;
+        background-color: rgba(0, 0, 0, 0.667);
+        width: 50%;
+        height: 50vw;
+        flex-direction: column;
+        gap: 1rem;
+        z-index: 100;
+    }
+
+    ol li {
+        color: white;
+        background-color: #5f5d5d;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    form .my-form {
+        width: 85%;
+        margin-left: 0.2rem;
+    }
+
+    .my-form .email {
+        margin-bottom: 2rem;
+    }
+
+    .myWholeForm {
+        margin-left: -0.5rem;
+        margin-top: -5rem;
+    }
+
+    form .form-button {
+        justify-content: unset;
+        margin-left: 5.3rem;
+        gap: 20.7%;
+    }
+
+    .close1 {
+        top: -17rem;
+        margin-left: -11rem;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 42rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .hamburger img {
+        color: red;
+        background-color: orangered;
+    }
+}
+
+.section1 {
+    background-image: url(./images/first\ image.jpg);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 545px;
+    margin-top: 8.5rem;
+    margin-left: 4rem;
+}
+
+.journey {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    margin-left: 8rem;
+    height: 525px;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+.journey p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+.journey article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+.section2 {
+    background-image: url(./images/second-image.jpg);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 525px;
+    margin-top: 5.5rem;
+    margin-left: 4rem;
+}
+
+.application {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    right: -38rem;
+    height: 525px;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+.application p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+
+.application article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+
+.section3 {
+    background-image: url(./images/third-image.jpg);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 525px;
+    margin-top: 5.5rem;
+    margin-left: 4rem;
+}
+
+.preparation {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    margin-left: 8rem;
+    height: 525px;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+
+.preparation p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+.preparation article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+.section4 {
+    background-image: url(./images/fourth-image.jpg);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 540px;
+    margin-top: 5.5rem;
+    margin-left: 4rem;
+}
+
+.dashboard {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    right: -38rem;
+    height: 525px;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+.dashboard p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+.dashboard article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    color: rgb(95, 93, 93);
+}
+
+@media (max-width: 770px) {
+    .section1 {
+        width: 130%;
+        background-image: none;
+        margin-left: -5rem;
+        margin-bottom: 35rem;
+        margin-top: -3rem;
+        height: 190px;
+    }
+
+    .journey {
+        width: 65%;
+        background-color: unset;
+    }
+    
+    .journey p {
+        font-size: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .journey article {
+        margin-top: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .section2 {
+        width: 130%;
+        background-image: none;
+        margin-left: -35.1rem;
+        margin-bottom: 35rem;
+        margin-top: -30rem;
+        height: 190px;
+    }
+    
+    .application {
+        width: 65%;
+        background-color: unset;
+    }
+    
+    .application p {
+        font-size: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .application article {
+        margin-top: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .section3 {
+        width: 65%;
+        background-image: none;
+        margin-left: -5rem;
+        margin-bottom: 35rem;
+        margin-top: -30rem;
+        height: 190px;
+    }
+    
+    .preparation {
+        width: 130%;
+        background-color: unset;
+    }
+    
+    
+    .preparation p {
+        font-size: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .preparation article {
+        margin-top: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .section4 {
+        width: 130%;
+        background-image: none;
+        margin-left: -35.1rem;
+        margin-bottom: 35rem;
+        margin-top: -28rem;
+        height: 10px;
+    }
+    
+    .dashboard {
+        width: 65%;
+        background-color: unset;
+    }
+    
+    .dashboard p {
+        font-size: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .dashboard article {
+        margin-top: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+}
+
+.section5 {
+    width: 57%;
+    margin-top: 4.5rem;
+    margin-left: 0.7rem;
+}
+
+.sub-heading p {
+    width: 100%;
+    margin-left: 17rem;
+    font-size: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(95, 93, 93);
+    margin-bottom: 4rem;
+}
+
+.flex-item {
+    display: flex;
+    gap: 1.3rem;
+    margin-left: 3.5rem;
+}
+
+.passport {
+    width: 350px;
+    height: 480px;
+    border: rgb(202, 197, 197) solid 0.2px;
+    padding-block: 2.5rem;
+    padding-inline: 1.8rem;
+}
+
+.passport p {
+    padding-inline: 1.5rem;
+    width: 23rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    color: rgb(199, 66, 17);
+    margin-bottom: 1.9rem;
+}
+
+.passport article {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 17.5rem;
+    font-size: 1rem;
+}
+
+.passport ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.69rem;
+    padding-inline: 2.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+    list-style-position: outside;
+}
+
+.free {
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.passport img {
+    padding-left: 3.4rem;
+    cursor: pointer;
+}
+
+.hours {
+    width: 350px;
+    height: 480px;
+    border: rgb(202, 197, 197) solid 0.2px;
+    padding-block: 2.5rem;
+    padding-inline: 1.8rem;
+}
+
+.hours p {
+    padding-inline: 3.7rem;
+    width: 23rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    color: rgb(199, 66, 17);
+    margin-bottom: 1.9rem;
+}
+
+.hours article {
+    padding-left: 0.5rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 17.8rem;
+    font-size: 1rem;
+}
+
+.hours ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.69rem;
+    width: 20rem;
+    padding-inline: 3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+    list-style-position: outside;
+}
+
+.session {
+    margin-left: 2.2rem;
+}
+
+.session button {
+    cursor: pointer;
+    background-color: white;
+    border: solid 1.8px;
+    border-color: rgba(38, 38, 230, 0.301);
+    color: rgba(38, 38, 230, 0.644);
+    border-radius: 4px;
+}
+
+.session button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(17, 17, 212, 0.548);
+}
+
+.session1 {
+    padding-inline: 3.3rem;
+    padding-block: 0.6rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.session2 {
+    padding-inline: 3.05rem;
+    padding-block: 0.6rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.session3 {
+    padding-inline: 3.94rem;
+    padding-block: 0.6rem;
+    font-size: 0.75rem;
+}
+
+.guide {
+    width: 350px;
+    height: 480px;
+    border: rgb(202, 197, 197) solid 0.2px;
+    padding-block: 2.5rem;
+    padding-inline: 1.8rem;
+}
+
+.guide p {
+    padding-inline: 2.5rem;
+    width: 23rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    color: rgb(199, 66, 17);
+    margin-bottom: 1.9rem;
+}
+
+.guide article {
+    padding-left: 0.5rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 17rem;
+    font-size: 1rem;
+}
+
+.guide ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.69rem;
+    padding-inline: 2.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+    list-style-position: outside;
+}
+
+.order button {
+    margin-left: 1.8rem;
+    padding-inline: 5.3rem;
+    padding-block: 0.6rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: white;
+    border: solid 1.8px;
+    border-color: rgba(38, 38, 230, 0.301);
+    color: rgba(38, 38, 230, 0.644);
+    border-radius: 4px;
+}
+
+.order button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(17, 17, 212, 0.548);
+}
+
+@media (max-width: 770px) {
+    .section5 {
+        width: 112%;
+        margin-top: -16rem;
+        margin-left: -2.5rem;
+    }
+    
+    .sub-heading p {
+        width: 40rem;
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        margin-left: 10rem;
+    }
+    
+    .flex-item {
+        flex-direction: column;
+        gap: 0.9rem;
+        margin-left: 4.7rem;
+    }
+    
+    .passport {
+        width: 90%;
+        height: 500px;
+        padding-block: 3rem;
+        padding-inline: 1.8rem;
+    }
+    
+    .passport p {
+        padding-inline: 12rem;
+        width: 45rem;
+        font-size: 1.9rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .passport article {
+        width: 45rem;
+        font-size: 1.1rem;
+        margin-left: -2rem;
+    }
+    
+    .passport ul {
+        width: 45rem;
+        font-size: 0.9rem;
+        padding-inline: 5.5rem;
+        margin-left: -2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        list-style-position: outside;
+    }
+    
+    .free {
+        padding-left: 15rem;
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+
+    .passport .app-store {
+        margin-left: 8.8rem;
+        
+    }
+    
+    .passport img {
+        margin-top: -1.5rem;
+        width: 290px;
+    }
+    
+    .hours {
+        width: 90%;
+        height: 500px;
+        padding-block: 3rem;
+        padding-inline: 1.8rem;
+    }
+    
+    .hours p {
+        padding-inline: 15rem;
+        width: 45rem;
+        font-size: 1.9rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .hours article {
+        width: 45rem;
+        font-size: 1.1rem;
+        margin-left: -3rem;
+    }
+    
+    .hours ul {
+        width: 45rem;
+        font-size: 0.9rem;
+        padding-inline: 5.5rem;
+        margin-left: -2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        list-style-position: outside;
+    }
+    
+    .session {
+        margin-left: 10rem;
+    }
+    
+    .session button {
+        border: solid 0.5px;
+        border-color: rgba(38, 38, 230, 0.301);
+        color: rgba(38, 38, 230, 0.644);
+        border-radius: 2px;
+    }
+    
+    .session1 {
+        padding-inline: 7rem;
+        padding-block: 0.6rem;
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        word-spacing: 0.3rem;
+    }
+    
+    .session2 {
+        padding-inline: 6.7rem;
+        padding-block: 0.6rem;
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        word-spacing: 0.3rem;
+    }
+    
+    .session3 {
+        padding-inline: 8.1rem;
+        padding-block: 0.6rem;
+        font-size: 1rem;
+        word-spacing: 0.3rem;
+    }
+    
+    .guide {
+        width: 90%;
+        height: 500px;
+        padding-block: 3rem;
+        padding-inline: 1.8rem;
+    }
+    
+    .guide p {
+        padding-inline: 13rem;
+        width: 45rem;
+        font-size: 1.9rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .guide article {
+        width: 45rem;
+        font-size: 1.1rem;
+        margin-left: -3rem;
+    }
+    
+    .guide ul {
+        width: 45rem;
+        font-size: 0.9rem;
+        padding-inline: 5.5rem;
+        margin-left: -2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        list-style-position: outside;
+    }
+    
+    .order button {
+        padding-inline: 10rem;
+        padding-block: 0.6rem;
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+        margin-left: 10rem;
+        border: solid 1.8px;
+        border-color: rgba(38, 38, 230, 0.301);
+        color: rgba(38, 38, 230, 0.644);
+        border-radius: 2px;
+    }
+}
+
+.section6 {
+    margin-top: 8.5rem;
+    display: flex;
+    gap: 7rem;
+}
+
+.zoom {
+    margin-left: 2rem;
+    width: 10px;
+    display: block;
+}
+
+.zoom .plus {
+    margin-left: -0.85rem;
+    margin-top: -1rem;
+    padding-inline: 0.65rem;
+    padding-block: 0.37rem;
+    background-color: white;
+    border: 1px solid #999;
+}
+
+.zoom .plus:hover {
+    background-color: #999;
+    cursor: pointer;
+}
+
+.zoom .minus {
+    margin-left: -0.85rem;
+    margin-top: -0.rem;
+    padding-inline: 0.75rem;
+    padding-block: 0.4rem;
+    background-color: white;
+    border: 1px solid #999;
+}
+
+.zoom .minus:hover {
+    background-color: #999;
+    cursor: pointer;
+}
+
+.section6 .berkeley {
+    margin-top: 1.8rem;
+}
+
+.section6 .paragraph1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9rem;
+    color: #5f5d5d;
+}
+
+.section6 article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.8rem;
+    color: #c74211;
+    margin-bottom: 0.5rem;
+}
+
+.section6 .paragraph2 {
+    margin-top: 1.5rem;
+    color: #5f5d5d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    width: 70%;
+    line-height: 1.3rem;
+}
+
+@media (max-width: 770px) {
+    .section6 {
+        margin-top: 2rem;
+        margin-left: 16rem;
+        width: 30%;
+    }
+    
+    .zoom {
+        display: none;
+    }
+
+    .section6 .berkeley {
+        text-align: center;
+    }
+
+    .section6 .paragraph1 {
+        font-size: 2rem;
+    }
+    
+    .section6 article {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .section6 .paragraph2 {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        width: 190%;
+        margin-left: -6.5rem;
+    }
+
+    .section6 hr {
+        position: relative;
+        width: 240%;
+        left: -10rem;
+    }
+}
+
+.section7 {
+    margin-top: 22rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem; 
+    display: flex;
+    gap: 5.5rem;
+}
+
+.edupath {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 250px;
+}
+
+.edupath img {
+    width: 40%;
+}
+
+.edupath p {
+    margin-top: 0.1rem;
+    font-size: 0.77rem;
+    line-height: 0.9rem;
+    color: #aaa4a4;
+    width: 200px;
+}
+
+.edupath p ion-icon {
+    font-size: 0.9em;
+}
+
+.edupath article {
+    margin-top: 0.9rem;
+    font-size: 0.7rem;
+    line-height: 0.95rem;
+    color: #aaa4a4;
+    display: block;
+}
+
+.company {
+    margin-top: 0.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.company p {
+    font-size: 0.82rem;
+    margin-bottom: 0.2rem;
+    color: #e94a10;
+}
+
+.company ul {
+    list-style: none;
+    font-size: 0.77rem;
+    line-height: 1.1rem;
+    color: #aaa4a4;
+}
+
+.company ul {
+    cursor: pointer;
+}
+
+.touch {
+    margin-top: 0.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.touch p {
+    font-size: 0.82rem;
+    margin-bottom: 0.2rem;
+    color: #e94a10;
+}
+
+.touch ul {
+    list-style: none;
+    font-size: 0.77rem;
+    line-height: 1.1rem;
+    color: #aaa4a4;
+    cursor: pointer;
+}
+
+.education {
+    margin-top: 0.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.education p {
+    font-size: 0.82rem;
+    margin-bottom: 0.2rem;
+    color: #e94a10;
+}
+
+.education article {
+    font-size: 0.77rem;
+    color: #aaa4a4;
+    cursor: pointer;
+}
+
+.icon {
+    margin-top: 0.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.twitter {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 2.3em;
+    height: 2.3em;
+    color: #e94a10;
+    padding-block: 0.6em;
+    padding-inline: 0.55em;
+    cursor: pointer;
+}
+
+.twitter ion-icon {
+    font-size: 1rem;
+}
+
+.twitter:hover {
+    color: white;
+    background-color: #e94a10;
+}
+
+.facebook {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 2.3em;
+    height: 2.3em;
+    color: #e94a10;
+    padding-block: 0.4em;
+    padding-inline: 0.4em;
+    cursor: pointer;
+}
+
+.facebook ion-icon {
+    font-size: 1.3rem;
+}
+
+.facebook:hover {
+    color: white;
+    background-color: #e94a10;
+}
+
+.article2 {
+    display: none;
+}
+
+.icon2 {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .section7 {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-left: 0.8rem;
+        width: 90%;
+        flex-direction: column;
+        gap: 5.5rem;
+    }
+
+    .edupath {
+        width: 250px;
+    }
+    
+    .edupath img {
+        width: 65%;
+        margin-left: 17.5rem;
+    }
+    
+    .edupath p {
+        text-align: center;
+        margin-left: 13.5rem;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        width: 280px;
+    }
+    
+    .edupath p ion-icon {
+        font-size: 0.9em;
+    }
+    
+    .edupath article {
+        display: none;
+    }
+
+    .article2 {
+        display: block;
+        width: 700px;
+        margin-left: 1.5rem;
+        margin-top: -0.2rem;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #aaa4a4;
+    }
+
+    .company {
+        margin-top: -3rem;
+    } 
+    
+    .company p {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+        margin-left: 20rem;
+    }
+    
+    .company ul {
+        margin-left: 1rem;
+        text-align: center;
+        list-style: none;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    
+    .touch {
+        margin-top: -3.5rem;
+    }
+    
+    .touch p {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+        margin-left: 18.8rem;
+    }
+    
+    .touch ul {
+        margin-left: 1rem;
+        text-align: center;
+        list-style: none;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    
+    .education {
+        margin-top: -3.5rem;
+    }
+    
+    .education p {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+        margin-left: 19.5rem;
+    }
+    
+    .education article {
+        margin-left: 1rem;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon2 {
+        margin-top: 1rem;
+        display: block;
+        display: flex;
+        gap: 1.1rem;
+        margin-left: 19.7rem;
+    }
+    
+    .twitter {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 2.1em;
+        height: 2.1em;
+        padding-block: 0.5em;
+        padding-inline: 0.55em;
+    }
+    
+    .twitter ion-icon {
+        font-size: 1rem;
+    }
+    
+    .facebook {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 2.1em;
+        height: 2.1em;
+        color: #e94a10;
+        padding-block: 0.35em;
+        padding-inline: 0.35em;
+    }
+    
+    .facebook ion-icon {
+        font-size: 1.3rem;
+    }
+}
